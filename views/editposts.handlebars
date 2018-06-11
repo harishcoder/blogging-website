@@ -1,0 +1,30 @@
+<div class="update">
+<form method="post" action="/posts/edit/{{posts._id}}" enctype="multipart/form-data">
+<h1>Edit Post</h1>
+<label name = "title">
+<h3>Title:</h3>
+<input type="text" name = "title" placeholder="Add title" value="{{posts.title}}">
+</label>
+<label name = "category">
+<h3>Category:</h3>
+<select name = "category" size = 1>
+<option value="{{posts.category}}">{{posts.category}}</options>
+</select>
+</label>
+<label name = "body">
+<h3>Body:</h3>
+<textarea name="body" placeholder="Write your post here" id = "body">{{posts.body}}</textarea>
+</label>
+<label name = "image">
+<h3>Profile Image:</h3>
+<input id = "imagefile" type="file" name="addimage" placeholder="add Image" value="{{posts.addimage}}">
+</label>
+<label name = "author">
+<h3>Author:</h3>
+<input type="text" name = "Author" placeholder="Your name" value ="{{posts.Author}}">
+</label>
+<button type="submit">Submit</button>
+</form>
+</div>
+<script src="../ckeditor/ckeditor.js"></script>
+<script> CKEDITOR.replace('body')</script>

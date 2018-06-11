@@ -1,0 +1,25 @@
+<div class = "container">
+
+  {{#if success_msg}}
+    <div class="message">{{success_msg}}</div>
+  {{/if}}
+  {{#if error_msg}}
+  <div class="message">{{error_msg}}</div>
+  {{/if}}
+  {{#if error}}
+    <div class="message">{{error}}</div>
+  {{/if}}
+{{#if posts}}
+{{#each posts}}
+  <img src="/images/uploads/{{addimage}}" class="imagestyle">
+  <a id = "title" href = '/addComments/show/{{_id}}'><h1> {{title}} </h1></a>
+  <h4> Created by {{Author}} on <a href = '/categories/show/{{category}}'> {{category}} </a>at {{date}}. </h4>
+  <p>{{body}} </p>
+  <a id = "read"  href ='/addComments/show/{{_id}}'>Read more</a>
+  <br>
+  <hr>
+{{/each}}
+{{else}}
+<h3>No post to show.</h3>
+{{/if}}
+</div>

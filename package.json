@@ -1,0 +1,26 @@
+{
+  "name": "nodeblog",
+  "version": "1.0.0",
+  "description": "blogging website using node.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hari singh mandral",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "*",
+    "connect-flash": "*",
+    "cookie-parser": "*",
+    "express": "*",
+    "express-handlebars": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "moment": "^2.22.1",
+    "mongodb": "*",
+    "monk": "*",
+    "multer": "*",
+    "path": "*",
+    "serve-favicon": "*"
+  }
+}

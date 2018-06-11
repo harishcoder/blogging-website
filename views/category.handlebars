@@ -1,0 +1,16 @@
+<div class="container">
+<h1>Add Category</h1>
+{{#each errors}}
+<div class = "message">{{msg}}</div>
+{{/each}}
+
+  <form id="addCategory" method="post" action="/categories/add">
+    <label name="categories">
+  <h3>Category:</h3>
+  <input name="title" placeholder=" Add category">
+</label>
+  <button type="submit">Submit</button>
+  </form>
+
+
+</div>

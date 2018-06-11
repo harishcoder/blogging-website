@@ -1,0 +1,334 @@
+
+
+body{
+  margin: 0px;
+  padding:0px;
+  font-family: sans-serif;
+  width:80%;
+  border:2px solid #f6f1ed ;
+  margin: auto;
+  background: #173e43;
+  border-radius: 3px;
+  margin-top: 5px;
+  box-shadow: 2px 2px 15px rgba(0,0,0,.5);
+}
+#navmenu
+{
+  background: #f6f1ed;
+  position: relative;
+  height:80px;
+  color:black;
+
+}
+#navmenu img{
+  width:80px;
+  height:60px;
+  padding: 10px;
+  position:absolute;
+  top:5px;
+  left:10px;
+}
+
+ #navmenu ul{
+   display: flex;
+   flex-direction: row;
+   position: absolute;
+   top:10px;
+   right:30px;
+  }
+#navmenu h1{
+  position: absolute;
+  top:20px;
+  padding: 0px;
+  margin: 0px;
+  left:110px;
+  font-size: 40px;
+  color:black;
+  }
+
+#navmenu ul li{
+  list-style: none;
+  font-size: 20px;
+  margin: 10px;
+  color:coral;
+
+}
+#navmenu ul li a{
+  text-decoration: none;
+  padding:5px;
+  color:black;
+
+}
+#navmenu ul li a:hover{
+  background: #ddd;
+  border-radius: 4px;
+  color:black;
+}
+
+#foot{
+  text-align: center;
+  position: abolute;
+  bottom:5px;
+  background: #fc4445;
+  padding: 2px;
+}
+
+#foot ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;;
+}
+#foot ul li{
+  list-style: none;
+  margin-right:20px;
+  padding-bottom: 10px;
+}
+#foot ul li a{
+  text-decoration: none;
+  color:white;
+}
+
+#foot ul li a:hover{
+  background: #ddd;
+  border-radius: 4px;
+  color:black;
+  }
+
+.container{
+    padding-top: 10px;
+  }
+
+
+
+.container h1
+{
+  margin-top: 20px;
+  color:#009688;
+  margin-left: 10px;
+  margin-bottom: 0px;
+}
+.container h4
+{
+width: 99%;
+text-align: left;
+margin-top: 3px;
+padding-left: 10px;
+background: #d2b48cc9;
+}
+.container h3
+{
+  margin: 20px;
+  color:white;
+}
+
+.container #read
+{
+  text-decoration: none;
+  padding:5px;
+  background: #add8e652;
+  margin-left: 10px;
+  color:black;
+  border:1px solid;
+  border-radius: 4px;
+  margin-bottom: 20px;
+
+}
+.container .imagestyle{
+  width:100%;
+  height:500px;
+}
+.show .imagestyle{
+  width:100%;
+  height:500px;
+}
+.container #read:hover{
+  color:white;
+  box-shadow: 2px 2px 15px rgba(0.0.0,.5);
+
+}
+
+hr{
+  margin: 10px;
+}
+
+.container{
+  margin-top: 10px;
+}
+
+.container p
+{
+  margin: 20px;
+  color:white;
+}
+.container hr{
+  display: block;
+  margin-top: 10px;
+}
+
+.container #title
+{
+  text-decoration: none;
+}
+
+#head{
+  margin:20px;
+  color: #009688;
+  padding-bottom: 10px;
+
+}
+
+form {
+  position: relative;
+  width:100%;
+}
+
+form label{
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+
+}
+form label h3
+{
+  width:20%;
+  margin:0px;
+}
+form label input{
+  width:30%;
+  height:25px;
+  border:1px solid;
+  border-radius: 4px;
+  padding-left: 5px;
+}
+form label input:hover{
+  box-shadow: 2px 2px 15px rgba(0,0,0,.5);
+}
+form label textarea
+{
+  width:70%;
+  height:100px;
+  border:1px solid;
+  border-radius: 4px;
+  padding-left: 5px;
+}
+form label #imagefile{
+  background: white;
+  color: black;
+  height:21px;
+}
+
+form button{
+  position: relative;
+  left:580px;
+  margin-bottom: 20px;
+  border:1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+  height:25px;
+}
+form button:hover{
+  box-shadow: 2px 2px 15px rgba(0,0,0,.5);
+}
+
+.message{
+  padding-top: 10px;
+  width: 500px;
+  height: 30px;
+  background: #4CAF50;
+  border: 1px solid;
+  border-radius: 4px;
+  margin: auto;
+  text-align: center;
+  font-size: 20px;
+}
+
+.container #addCategory label{
+  display: flex;
+  flex-direction: row;
+  }
+.container #addCategory input{
+  margin-top: 15px;
+}
+  .container #addCategory h3{
+    width:12%;
+  }
+  .container #addCategory button{
+    left:445px;
+    top: -20px;
+  }
+.container .comsection
+  {
+margin: 20px;
+background: #dbdfe1;
+width: 700px;
+border: 1px solid;
+border-radius: 4px;
+  }
+  .container .comsection .row{
+    display: flex;
+  }
+  .container .comsection .row a{
+    margin:8px;
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+    padding: 5px;
+}
+  .container .comsection .row a:hover{
+   background:black;
+   color:white;
+   border-radius: 4px;
+}
+.container .comsection h4
+{
+background: none;
+font-size: 20px;
+margin: 10px;
+}
+.container .comsection p {
+  margin-top: 5px;
+  color:black;
+}
+.container .comsection span{
+  margin: 20px;
+}
+.container .addComment form h3{
+  margin: 0px;
+}
+.container .addComment h2{
+  margin:20px;
+  color: white;
+}
+.container .edit{
+  margin: 20px;
+  margin-top: 0px;
+}
+.container .edit button
+{
+border-radius: 4px;
+margin: 5px;
+border: 1px solid;
+width: 80px;
+height: 30px;
+font-size: 20px;
+background: unset;
+cursor:pointer;
+}
+.container .edit button a{
+  text-decoration: none;
+  color:black;
+}
+.container .edit button:hover{
+  background:white;
+  color:black;
+  box-shadow: 2px 2px 15px rgba(0,0,0,.5);
+}
+
+.update h1
+{
+  margin: 30px 20px;
+}
+.update form #body{
+  width:70%;
+  height:300px;
+}

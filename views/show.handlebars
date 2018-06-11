@@ -1,0 +1,59 @@
+<div class="container">
+  <img src="/images/uploads/{{posts.addimage}}" class="imagestyle">
+  <h1> {{posts.title}} </h1>
+  <h4> Created by {{posts.Author}} on {{posts.category}} at {{posts.date}}. </h4>
+  <p>{{posts.body}} </p>
+  <br>
+
+  <div class = "edit">
+    <button type="button"><a href = "/posts/edit/{{posts._id}}" >Edit</a></button>
+    <button type="button"><a href = "#" id="delete" data-id="{{posts._id}}">Delete</a></button>
+  </div>
+  <hr>
+  <h3>Comments</h3>
+  {{#if success_msg}}
+    <div class="message">{{success_msg}}</div>
+  {{/if}}
+  {{#if error_msg}}
+  <div class="message">{{error_msg}}</div>
+  {{/if}}
+  {{#if error}}
+    <div class="message">{{error}}</div>
+  {{/if}}
+
+
+{{#each posts.comments}}
+<div class="comsection">
+<div class="row">
+<h4>{{name}}</h4>
+<a href="#">{{email}}</a>
+</div>
+<p>{{body}}</p>
+<span>{{commentdate}}</span>
+</div>
+{{/each}}
+<br>
+<br>
+
+
+<div class="addComment">
+<h2>Add Comments</h2>
+<form action="/addcomments/show/{{posts._id}}" method="post">
+  <input type="hidden" name='postid' value='{{posts._id}}'>
+  <label>
+    <h3>Name</h3>
+    <input name="name" placeholder="Enter name" >
+  </label>
+  <label>
+    <h3>Email</h3>
+    <input name="email" placeholder="Enter email id" >
+  </label>
+  <label>
+    <h3>Comment</h3>
+    <textarea name="body"></textarea>
+  </label>
+  <button type="submit">Submit</button>
+</form>
+
+</div>
+</div>
