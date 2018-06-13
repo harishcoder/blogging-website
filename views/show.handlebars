@@ -6,8 +6,8 @@
   <br>
 
   <div class = "edit">
-    <button type="button"><a href = "/posts/edit/{{posts._id}}" >Edit</a></button>
-    <button type="button"><a href = "#" id="delete" data-id="{{posts._id}}">Delete</a></button>
+    <button type="button" class="alert alert-success"><a href = "/posts/edit/{{posts._id}}" >Edit</a></button>
+    <button type="button" class="alert alert-danger"><a href = "#" id="delete" data-id="{{posts._id}}">Delete</a></button>
   </div>
   <hr>
   <h3>Comments</h3>
@@ -24,7 +24,7 @@
 
 {{#each posts.comments}}
 <div class="comsection">
-<div class="row">
+<div class="comments">
 <h4>{{name}}</h4>
 <a href="#">{{email}}</a>
 </div>

@@ -32,15 +32,18 @@ const storage = multer.diskStorage({
   }
 });
 
-
 //setup engine
 app.set('views',path.join(__dirname,'views'));
 app.engine('handlebars',exhbs({defaultLayout:'layout'}));
 app.set('view engine','handlebars');
 
 
+
 //set public files
 app.use(express.static(path.join(__dirname,'public')));
+
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+
 
 
 //multer for uploading files
